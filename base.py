@@ -1,1 +1,1 @@
-print("hello world")
+E=input("Input the measure of the vertical angle (E)")
