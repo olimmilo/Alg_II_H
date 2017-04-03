@@ -7,4 +7,4 @@ Yl=int(input("Input the y coordinate of the antenna (Yl): "))
 Zl=0
 B=61
 Rr=(((Xl-((H/(math.tan(90-E)))*(math.sin(90-A))))**2)+((Yl-((H/(math.tan(90-E)))*(math.sin(A))))**2)+((Zl-(H-B))**2))**(1/2)
-print(Rr)
+print("The Range is equal to:"Rr)
