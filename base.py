@@ -10,8 +10,10 @@ def deg2rad(degrees):
 E=float(input("Input the measure of the vertical angle (E): "))
 A=float(input("Input the measure of the azimuth angle (A): "))
 H=float(input("Input the height (Z): "))
-Xl=float(input("Input the x coordinate of the antenna (Xl): "))
-Yl=float(input("Input the y coordinate of the antenna (Yl): "))
+#Xl=float(input("Input the x coordinate of the antenna (Xl): "))
+#Yl=float(input("Input the y coordinate of the antenna (Yl): "))
+Xl=40.6
+Yl=-106
 Zl=0
 B=61
 Rr=(((Xl-((H/(math.tan(deg2rad(90-E))))*(math.sin(deg2rad(90-A)))))**2)+((Yl-((H/(math.tan(deg2rad(90-E))))*(math.sin(deg2rad(A)))))**2)+((Zl-(H-B))**2))**(1/2)
