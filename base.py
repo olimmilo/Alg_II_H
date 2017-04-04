@@ -24,14 +24,27 @@ if Xp > 0 and Yp > 0:
     QUAD=1
     AZIM=rad2deg(math.atan((Yl-Yp)/(Xl-Xp)))
 elif Xp > 0 and Yp < 0:
-    QUAD=4
+    QUAD="Fourth"
     AZIM=rad2deg((math.atan((Yl-Yp)/(Xl-Xp))))+360
 elif Xp < 0 and Yp < 0:
-    QUAD=3
+    QUAD="Third"
     AZIM=(rad2deg(math.atan((Yl-Yp)/(Xl-Xp))))-180
 elif Xp < 0 and Yp > 0:
-    QUAD=2
+    QUAD="Second"
     AZIM=(rad2deg(math.atan((Yl-Yp)/(Xl-Xp))))+180
+elif Xp == 0 and Yp > 0:
+    QUAD="Special"
+elif Xp == 0 and Yp < 0:
+    QUAD="Special"
+elif Xp == 0 and Yp == 0:
+    QUAD="Special"
+elif Xp > 0 and Yp == 0:
+    QUAD="Special"
+elif Xp < 0 and Yp == 0:
+    QUAD="Special"
+else:
+    QUAD="Undetermined"
+    AZIM="Undetermined"
 
 print("The quadrant in which the projection point falls is",QUAD)
 print("The measure of the vertical angle of the beacon relative to the antenna:",ELEV,"\u00b0")
