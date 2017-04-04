@@ -18,6 +18,7 @@ Rr=(((Xl-((H/(math.tan(deg2rad(90-E))))*(math.sin(deg2rad(90-A)))))**2)+((Yl-((H
 
 AZIM=2
 
-print("The range is equal to:",Rr,"meters")
+
 print("The measure of the vertical angle of the beacon relative to the antenna:",ELEV,"\u00b0")
-print("The azimuth is equal to:",AZIM,"\u00b0")
+print("The azimuth of the beacon relative to the antenna:",AZIM,"\u00b0")
+print("The range of the beacon relative to the antenna:",Rr,"meters")
