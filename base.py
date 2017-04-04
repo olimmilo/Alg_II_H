@@ -15,7 +15,9 @@ Yl=float(input("Input the y coordinate of the antenna (Yl): "))
 Zl=0
 B=61
 Rr=(((Xl-((H/(math.tan(deg2rad(90-E))))*(math.sin(deg2rad(90-A)))))**2)+((Yl-((H/(math.tan(deg2rad(90-E))))*(math.sin(deg2rad(A)))))**2)+((Zl-(H-B))**2))**(1/2)
+
 AZIM=2
 
 print("The range is equal to:",Rr,"meters")
+print("The measure of the vertical angle of the beacon relative to the antenna:",ELEV,"\u00b0")
 print("The azimuth is equal to:",AZIM,"\u00b0")
