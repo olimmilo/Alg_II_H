@@ -20,7 +20,7 @@ Rr=(((Xl-((H/(math.tan(deg2rad(90-E))))*(math.sin(deg2rad(90-A)))))**2)+((Yl-((H
 ELEV=90-rad2deg(math.asin((H-61)/Rr))
 Xp=((H/(math.tan(deg2rad(90-E))))*(math.sin(deg2rad(90-A))))
 Yp=((H/(math.tan(deg2rad(90-E))))*(math.sin(deg2rad(A))))
-if Xp and Yp > 0:
+if Xp > 0 and Yp > 0:
     QUAD=1
     AZIM=rad2deg(math.atan((Yl-Yp)/(Xl-Xp)))
 elif Xp > 0 and Yp < 0:
