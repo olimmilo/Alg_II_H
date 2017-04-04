@@ -33,6 +33,7 @@ elif Xp < 0 and Yp > 0:
     QUAD=2
     AZIM=(math.atan(rad2deg((Yl-Yp)/(Xl-Xp))))+180
 
+print("The quadrant in which the projection point falls is",QUAD)
 print("The measure of the vertical angle of the beacon relative to the antenna:",ELEV,"\u00b0")
 print("The azimuth of the beacon relative to the antenna:",AZIM,"\u00b0")
 print("The range of the beacon relative to the antenna:",Rr,"meters")
