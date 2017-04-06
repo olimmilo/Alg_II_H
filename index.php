@@ -2,6 +2,13 @@
 <html>
 <body>
 
+<form action="welcome.php" method="post">
+Vertical Angle (E): <input type="text" name="E"><br>
+Azimuth angle (A): <input type="text" name="A"><br>
+Height (Z): <input type="text" name="H"><br>
+<input type="submit">
+</form>
+
 <?php
 	function rad2deg($radians){
 		$pi = M_PI;
@@ -13,9 +20,9 @@
 		$radians = $pi * $degrees / 180;
 		return $radians;
 	}
-	$E=floatval(input("Input the measure of the vertical angle (E): "));
-	$A=floatval(input("Input the measure of the azimuth angle (A): "));
-	$H=floatval(input("Input the height (Z): "));
+	$E=floatval($E);
+	$A=floatval($A);
+	$H=floatval($H);
 	$Xl=40.6;
 	$Yl=-106;
 	$Zl=0;
