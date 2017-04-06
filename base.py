@@ -40,7 +40,7 @@ elif Xp == 0 and Yp < 0:
     AZIM=90
 elif Xp == 0 and Yp == 0:
     QUAD="Special"
-    AZIM=
+    AZIM=undefined
 elif Xp > 0 and Yp == 0:
     QUAD="Special"
     AZIM=0
