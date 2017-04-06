@@ -4,15 +4,15 @@
 
 <?php
 	import math;
-	function rad2deg(radians){
-		pi = math.pi;
-		degrees = 180 * radians / pi;
-		return degrees;
+	function rad2deg($radians){
+		$pi = math.pi;
+		$degrees = 180 * $radians / $pi;
+		return $degrees;
 	}
-	function deg2rad(degrees){
-		pi = math.pi;
-		radians = pi * degrees / 180;
-		return radians;
+	function deg2rad($degrees){
+		$pi = math.pi;
+		$radians = $pi * $degrees / 180;
+		return $radians;
 	}
 	$E=float(input("Input the measure of the vertical angle (E): "));
 	$A=float(input("Input the measure of the azimuth angle (A): "));
@@ -28,39 +28,31 @@
 	if ($Xp > 0 and $Yp > 0) {
 	    $QUAD="First";
 	    $AZIM=rad2deg(math.atan((Yl-Yp)/(Xl-Xp)));
-	}
-	elseif ($Xp > 0 and $Yp < 0) {
+	} elseif ($Xp > 0 and $Yp < 0) {
 	    $QUAD="Fourth";
 	    $AZIM=rad2deg((math.atan((Yl-Yp)/(Xl-Xp))))+360;
-	}
-	elseif ($Xp < 0 and $Yp < 0) {
+	} elseif ($Xp < 0 and $Yp < 0) {
 	    $QUAD="Third";
 	    $AZIM=(rad2deg(math.atan((Yl-Yp)/(Xl-Xp))))-180;
-	}
-	elseif ($Xp < 0 and $Yp > 0) {
+	} elseif ($Xp < 0 and $Yp > 0) {
 	    $QUAD="Second";
 	    $AZIM=(rad2deg(math.atan((Yl-Yp)/(Xl-Xp))))+180;
-	}
-	elseif ($Xp == 0 and $Yp > 0) {
+	} elseif ($Xp == 0 and $Yp > 0) {
 	    $QUAD="Special";
 	    $AZIM=90;
-	}
-	elseif ($Xp == 0 and $Yp < 0) {
+	} elseif ($Xp == 0 and $Yp < 0) {
 	    $QUAD="Special";
 	    $AZIM=90;
-	}
-	elseif ($Xp == 0 and $Yp == 0) {
+	} elseif ($Xp == 0 and $Yp == 0) {
 	    $QUAD="Special";
 	    $AZIM=Undefined;
-	}
-	elseif ($Xp > 0 and $Yp == 0) {
+	} elseif ($Xp > 0 and $Yp == 0) {
 	    $QUAD="Special";
 	    $AZIM=0;
-	}
-	elseif ($Xp < 0 and $Yp == 0) {
+	} elseif ($Xp < 0 and $Yp == 0) {
 	    $QUAD="Special";
 	    $AZIM=0;
-	else:
+	} else:
 	    $QUAD="Undetermined";
 	    $AZIM="Undetermined";
 	}
