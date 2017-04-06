@@ -3,14 +3,13 @@
 <body>
 
 <?php
-	import math;
 	function rad2deg($radians){
-		$pi = math.pi;
+		$pi = M_PI;
 		$degrees = 180 * $radians / $pi;
 		return $degrees;
 	}
 	function deg2rad($degrees){
-		$pi = math.pi;
+		$pi = M_PI;
 		$radians = $pi * $degrees / 180;
 		return $radians;
 	}
