@@ -34,19 +34,19 @@ elif Xp < 0 and Yp > 0:
     AZIM=(rad2deg(math.atan((Yl-Yp)/(Xl-Xp))))+180
 elif Xp == 0 and Yp > 0:
     QUAD="Special"
-    AZIM=
+    AZIM=90
 elif Xp == 0 and Yp < 0:
     QUAD="Special"
-    AZIM=
+    AZIM=90
 elif Xp == 0 and Yp == 0:
     QUAD="Special"
     AZIM=
 elif Xp > 0 and Yp == 0:
     QUAD="Special"
-    AZIM=
+    AZIM=0
 elif Xp < 0 and Yp == 0:
     QUAD="Special"
-    AZIM=
+    AZIM=0
 else:
     QUAD="Undetermined"
     AZIM="Undetermined"
