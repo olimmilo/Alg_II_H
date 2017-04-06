@@ -14,29 +14,29 @@
 		$radians = $pi * $degrees / 180;
 		return $radians;
 	}
-	$E=float(input("Input the measure of the vertical angle (E): "));
-	$A=float(input("Input the measure of the azimuth angle (A): "));
-	$H=float(input("Input the height (Z): "));
+	$E=floatval(input("Input the measure of the vertical angle (E): "));
+	$A=floatval(input("Input the measure of the azimuth angle (A): "));
+	$H=floatval(input("Input the height (Z): "));
 	$Xl=40.6;
 	$Yl=-106;
 	$Zl=0;
 	$B=61;
-	$Rr=((($Xl-(($H/(math.tan(deg2rad(90-$E))))*(math.sin(deg2rad(90-$A)))))**2)+(($Yl-(($H/(math.tan(deg2rad(90-$E))))*(math.sin(deg2rad($A)))))**2)+(($Zl-($H-$B))**2))**(1/2);
-	$ELEV=90-rad2deg(math.asin(($H-61)/$Rr));
-	$Xp=(($H/(math.tan(deg2rad(90-$E))))*(math.sin(deg2rad(90-$A))));
-	$Yp=(($H/(math.tan(deg2rad(90-$E))))*(math.sin(deg2rad($A))));
+	$Rr=((($Xl-(($H/(tan(deg2rad(90-$E))))*(sin(deg2rad(90-$A)))))**2)+(($Yl-(($H/(tan(deg2rad(90-$E))))*(sin(deg2rad($A)))))**2)+(($Zl-($H-$B))**2))**(1/2);
+	$ELEV=90-rad2deg(asin(($H-61)/$Rr));
+	$Xp=(($H/(tan(deg2rad(90-$E))))*(sin(deg2rad(90-$A))));
+	$Yp=(($H/(tan(deg2rad(90-$E))))*(sin(deg2rad($A))));
 	if ($Xp > 0 and $Yp > 0) {
 	    $QUAD="First";
-	    $AZIM=rad2deg(math.atan((Yl-Yp)/(Xl-Xp)));
+	    $AZIM=rad2deg(atan((Yl-Yp)/(Xl-Xp)));
 	} elseif ($Xp > 0 and $Yp < 0) {
 	    $QUAD="Fourth";
-	    $AZIM=rad2deg((math.atan((Yl-Yp)/(Xl-Xp))))+360;
+	    $AZIM=rad2deg((atan((Yl-Yp)/(Xl-Xp))))+360;
 	} elseif ($Xp < 0 and $Yp < 0) {
 	    $QUAD="Third";
-	    $AZIM=(rad2deg(math.atan((Yl-Yp)/(Xl-Xp))))-180;
+	    $AZIM=(rad2deg(atan((Yl-Yp)/(Xl-Xp))))-180;
 	} elseif ($Xp < 0 and $Yp > 0) {
 	    $QUAD="Second";
-	    $AZIM=(rad2deg(math.atan((Yl-Yp)/(Xl-Xp))))+180;
+	    $AZIM=(rad2deg(atan((Yl-Yp)/(Xl-Xp))))+180;
 	} elseif ($Xp == 0 and $Yp > 0) {
 	    $QUAD="Special";
 	    $AZIM=90;
