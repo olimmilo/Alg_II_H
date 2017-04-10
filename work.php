@@ -25,10 +25,10 @@
             $AZIM=(rad2deg((atan(($Yl-$Yp)/($Xl-$Xp)))))+180;
         } elseif ($Xp < $Xl and $Yp > $Yl) {
             $hi=3;
-            $AZIM=180-(rad2deg((atan(($Yl-$Yp)/($Xl-$Xp)))));
+            $AZIM=(rad2deg((atan(($Yl-$Yp)/($Xl-$Xp)))));
         } elseif ($Xp > $Xl and $Yp < $Yl) {
             $hi=4;
-            $AZIM=360-(rad2deg((atan(($Yl-$Yp)/($Xl-$Xp)))));
+            $AZIM=(rad2deg((atan(($Yl-$Yp)/($Xl-$Xp)))));
         } elseif ($Yp == $Yl) {
             $hi=5;
             $AZIM="Undefined";
