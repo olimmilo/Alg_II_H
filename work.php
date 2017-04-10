@@ -28,9 +28,13 @@
         } elseif ($Xp < $Xl and $Yp < $Yl) {
             $AZIM=rad2deg((atan((Yl-Yp)/(Xl-Xp))))+360;
         } elseif ($Xp < $Xl and $Yp > $Yl) {
-            $AZIM=rad2deg((atan((Yl-Yp)/(Xl-Xp))))+360;
+            $AZIM=rad2deg((atan((Yl-Yp)/(Xl-Xp))));
         } elseif ($Xp > $Xl and $Yp < $Yl) {
-            $AZIM=rad2deg((atan((Yl-Yp)/(Xl-Xp))))+360;
+            $AZIM=rad2deg((atan((Yl-Yp)/(Xl-Xp))));
+        } elseif ($Yp == $Yl) {
+            $AZIM="Undefined";
+         } elseif ($Xp == $Xl) {
+            $AZIM="0";
         }
       ?>
       
