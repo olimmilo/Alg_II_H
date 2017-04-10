@@ -2,16 +2,7 @@
   <body>
     <p> 
       <?php
-        function rad2deg($radians){
-          $pi = M_PI;
-          $degrees = 180 * $radians / $pi;
-          return $degrees;
-        }
-        function deg2rad($degrees){
-          $pi = M_PI;
-          $radians = $pi * $degrees / 180;
-          return $radians;
-        }
+
         $E=floatval($_POST["E"]);
         $A=floatval($_POST["A"]);
         $H=floatval($_POST["Z"]);
