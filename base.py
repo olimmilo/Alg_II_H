@@ -21,24 +21,33 @@ ELEV=90-rad2deg(math.asin((H-61)/Rr))
 Xp=((H/(math.tan(deg2rad(90-E))))*(math.sin(deg2rad(90-A))))
 Yp=((H/(math.tan(deg2rad(90-E))))*(math.sin(deg2rad(A))))
 if Xp > Xl and Yp > Yl:
+    print("1")
     AZIM=rad2deg(math.atan((Yl-Yp)/(Xl-Xp)))
 elif Xp > Xl and Yp < Yl:
+    print("2")
     AZIM=rad2deg((math.atan((Yl-Yp)/(Xl-Xp))))+360
 elif Xp < Xl and Yp < Yl:
+    print("3")
     AZIM=(rad2deg(math.atan((Yl-Yp)/(Xl-Xp))))-180
 elif Xp < Xl and Yp > Yl:
+    print("4")
     AZIM=(rad2deg(math.atan((Yl-Yp)/(Xl-Xp))))+180
 elif Xp == Xl and Yp > Yl:
+    print("5")
     AZIM=90
 elif Xp == Xl and Yp < Yl:
+    print("6")
     AZIM=90
 elif Xp == Xl and Yp == Yl:
+    print("7")
     AZIM=Undefined
 elif Xp > 0 and Yp == Yl:
+    print("8")
     AZIM=0
 elif Xp < Xl and Yp == Yl:
     AZIM=0
 else:
+    print("1")
     QUAD="Undetermined"
     AZIM="Undetermined"
 
