@@ -53,15 +53,7 @@
         } elseif ($Xp < 0 and $Yp == 0) {
             $QUAD="Special";
             $AZIM=0;
-        } else:
-            $QUAD="Undetermined";
-            $AZIM="Undetermined";
         }
-
-        echo "The quadrant in which the projection point falls is the".$QUAD
-        echo "The measure of the vertical angle of the beacon relative to the antenna:".$ELEV."\u00b0";
-        echo "The azimuth of the beacon relative to the antenna:".$AZIM."\u00b0";
-        echo "The range of the beacon relative to the antenna:".$Rr."meters";
       ?>
       
       The measure of the vertical angle of the beacon relative to the antenna: <?php echo $_POST["ELEV"]; ?> \u00b0 <br>
