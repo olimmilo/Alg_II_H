@@ -32,9 +32,9 @@
         }
       ?>
       
-      The measure of the vertical angle of the beacon relative to the antenna: <?php echo $E; ?> &deg; <br>
-      The azimuth of the beacon relative to the antenna: <?php echo $A; ?> &deg; <br>
-      The range of the beacon relative to the antenna: <?php echo $H; ?> meters
+      The measure of the vertical angle of the beacon relative to the antenna: <?php echo $ELEV; ?> &deg; <br>
+      The azimuth of the beacon relative to the antenna: <?php echo $AZIM; ?> &deg; <br>
+      The range of the beacon relative to the antenna: <?php echo $Rr; ?> meters
     </p>
   </body>
 </html>
