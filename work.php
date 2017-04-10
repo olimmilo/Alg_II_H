@@ -9,7 +9,7 @@
         $Yl=-106;
         $Zl=0;
         $B=61;
-        /*$Rr=((($Xl-(($H/(tan(deg2rad(90-$E))))*(sin(deg2rad(90-$A)))))**2)+(($Yl-(($H/(tan(deg2rad(90-$E))))*(sin(deg2rad($A)))))**2)+(($Zl-($H-$B))**2))**(1/2);
+        $Rr=((($Xl-(($H/(tan(deg2rad(90-$E))))*(sin(deg2rad(90-$A)))))**2)+(($Yl-(($H/(tan(deg2rad(90-$E))))*(sin(deg2rad($A)))))**2)+(($Zl-($H-$B))**2))**(1/2);
         $ELEV=90-rad2deg(asin(($H-61)/$Rr));
         $Xp=(($H/(tan(deg2rad(90-$E))))*(sin(deg2rad(90-$A))));
         $Yp=(($H/(tan(deg2rad(90-$E))))*(sin(deg2rad($A))));
@@ -25,12 +25,12 @@
             $AZIM="Undefined";
          } elseif ($Xp == $Xl) {
             $AZIM="0";
-        } */
+        } 
       ?>
       
-      The measure of the vertical angle of the beacon relative to the antenna: <?php echo $Yl; ?> &deg; <br>
-      The azimuth of the beacon relative to the antenna: <?php echo $Zl; ?> &deg; <br>
-      The range of the beacon relative to the antenna: <?php echo $B; ?> meters
+      The measure of the vertical angle of the beacon relative to the antenna: <?php echo $ELEV; ?> &deg; <br>
+      The azimuth of the beacon relative to the antenna: <?php echo $AZIM; ?> &deg; <br>
+      The range of the beacon relative to the antenna: <?php echo $Rr; ?> meters
     </p>
   </body>
 </html>
