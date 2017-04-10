@@ -4,7 +4,7 @@
       <?php
         $E=floatval($_POST["E"]);
         $A=floatval($_POST["A"]);
-        $H=floatval($_POST["Z"]);
+        $H=floatval($_POST["H"]);
         $Xl=40.6;
         $Yl=-106;
         $Zl=0;
