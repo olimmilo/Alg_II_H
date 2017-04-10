@@ -9,7 +9,7 @@
         $Yl=-106;
         $Zl=0;
         $B=61;
-        $Zl=$H-$B;
+        $Zp=$H-$B;
         $Xp=(($H/(tan(deg2rad(90-$E))))*(sin(deg2rad(90-$A))));
         $Yp=(($H/(tan(deg2rad(90-$E))))*(sin(deg2rad($A))));
         $Zpl=pow(($Zl-$Zp),2);
