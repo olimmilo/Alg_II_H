@@ -16,7 +16,7 @@
         $Ypl=pow(($yl-$Yp),2);
         $Xpl=pow(($Xl-$Xp),2);
         $Rr=pow((($Xpl)+($Ypl)+($Zpl),0.5);
-        $ELEV=90-rad2deg(asin(($H-61)/$Rr));
+        /*$ELEV=90-rad2deg(asin(($H-61)/$Rr));
         if ($Xp > $Xl and $Yp > $Yl) {
             $AZIM=rad2deg(atan((Yl-Yp)/(Xl-Xp)));
         } elseif ($Xp < $Xl and $Yp < $Yl) {
@@ -29,11 +29,11 @@
             $AZIM="Undefined";
          } elseif ($Xp == $Xl) {
             $AZIM="0";
-        } 
+        } */
       ?>
       
-      The measure of the vertical angle of the beacon relative to the antenna: <?php echo $ELEV; ?> &deg; <br>
-      The azimuth of the beacon relative to the antenna: <?php echo $AZIM; ?> &deg; <br>
+      The measure of the vertical angle of the beacon relative to the antenna: <?php echo $Xpl; ?> &deg; <br>
+      The azimuth of the beacon relative to the antenna: <?php echo $Ypl; ?> &deg; <br>
       The range of the beacon relative to the antenna: <?php echo $Rr; ?> meters
     </p>
   </body>
