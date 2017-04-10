@@ -61,9 +61,9 @@
         echo "The range of the beacon relative to the antenna:".$Rr."meters";
       ?>
       
-      E: <?php echo $_POST["E"]; ?><br>
-      A: <?php echo $_POST["A"]; ?><br>
-      Z: <?php echo $_POST["H"]; ?>
+      The measure of the vertical angle of the beacon relative to the antenna: <?php echo $_POST["ELEV"]; ?> \u00b0 <br>
+      The azimuth of the beacon relative to the antenna: <?php echo $_POST["AZIM"]; ?> \u00b0 <br>
+      The range of the beacon relative to the antenna: <?php echo $_POST["Range"]; ?> meters
     </p>
   </body>
 </html>
