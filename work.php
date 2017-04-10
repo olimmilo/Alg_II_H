@@ -23,33 +23,14 @@
         $ELEV=90-rad2deg(asin(($H-61)/$Rr));
         $Xp=(($H/(tan(deg2rad(90-$E))))*(sin(deg2rad(90-$A))));
         $Yp=(($H/(tan(deg2rad(90-$E))))*(sin(deg2rad($A))));
-        if ($Xp > 0 and $Yp > 0) {
-            $QUAD="First";
+        if ($Xp > $Xl and $Yp > $Yl) {
             $AZIM=rad2deg(atan((Yl-Yp)/(Xl-Xp)));
-        } elseif ($Xp > 0 and $Yp < 0) {
-            $QUAD="Fourth";
+        } elseif ($Xp < $Xl and $Yp < $Yl) {
             $AZIM=rad2deg((atan((Yl-Yp)/(Xl-Xp))))+360;
-        } elseif ($Xp < 0 and $Yp < 0) {
-            $QUAD="Third";
-            $AZIM=(rad2deg(atan((Yl-Yp)/(Xl-Xp))))-180;
-        } elseif ($Xp < 0 and $Yp > 0) {
-            $QUAD="Second";
-            $AZIM=(rad2deg(atan((Yl-Yp)/(Xl-Xp))))+180;
-        } elseif ($Xp == 0 and $Yp > 0) {
-            $QUAD="Special";
-            $AZIM=90;
-        } elseif ($Xp == 0 and $Yp < 0) {
-            $QUAD="Special";
-            $AZIM=90;
-        } elseif ($Xp == 0 and $Yp == 0) {
-            $QUAD="Special";
-            $AZIM=Undefined;
-        } elseif ($Xp > 0 and $Yp == 0) {
-            $QUAD="Special";
-            $AZIM=0;
-        } elseif ($Xp < 0 and $Yp == 0) {
-            $QUAD="Special";
-            $AZIM=0;
+        } elseif ($Xp < $Xl and $Yp > $Yl) {
+            $AZIM=rad2deg((atan((Yl-Yp)/(Xl-Xp))))+360;
+        } elseif ($Xp > $Xl and $Yp < $Yl) {
+            $AZIM=rad2deg((atan((Yl-Yp)/(Xl-Xp))))+360;
         }
       ?>
       
