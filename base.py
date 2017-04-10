@@ -28,10 +28,10 @@ elif Xp > Xl and Yp < Yl:
     AZIM=rad2deg((math.atan((Yl-Yp)/(Xp-Xl))))+360
 elif Xp < Xl and Yp < Yl:
     print("3")
-    AZIM=(rad2deg(math.atan((Yl-Yp)/(Xl-Xp))))-180
+    AZIM=(rad2deg(math.atan((Yl-Yp)/(Xl-Xp))))+180
 elif Xp < Xl and Yp > Yl:
     print("4")
-    AZIM=(rad2deg(math.atan((Yp-Yl)/(Xl-Xp))))+180
+    AZIM=(rad2deg(math.atan((Yp-Yl)/(Xl-Xp))))-180
 elif Xp == Xl and Yp > Yl:
     print("5")
     AZIM=90
