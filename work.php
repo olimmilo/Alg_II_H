@@ -56,9 +56,9 @@
         }
       ?>
       
-      The measure of the vertical angle of the beacon relative to the antenna: <?php echo $_POST["ELEV"]; ?> \u00b0 <br>
-      The azimuth of the beacon relative to the antenna: <?php echo $_POST["AZIM"]; ?> \u00b0 <br>
-      The range of the beacon relative to the antenna: <?php echo $_POST["Range"]; ?> meters
+      The measure of the vertical angle of the beacon relative to the antenna: <?php echo $ELEV; ?> \u00b0 <br>
+      The azimuth of the beacon relative to the antenna: <?php echo $AZIM; ?> \u00b0 <br>
+      The range of the beacon relative to the antenna: <?php echo $Range; ?> meters
     </p>
   </body>
 </html>
