@@ -22,16 +22,16 @@ Xp=((H/(math.tan(deg2rad(90-E))))*(math.sin(deg2rad(90-A))))
 Yp=((H/(math.tan(deg2rad(90-E))))*(math.sin(deg2rad(A))))
 if Xp > Xl and Yp > Yl:
     print("1")
-    AZIM=rad2deg(math.atan((Yl-Yp)/(Xl-Xp)))
+    AZIM=rad2deg(math.atan((Yp-Yl)/(Xp-Xl)))
 elif Xp > Xl and Yp < Yl:
     print("2")
-    AZIM=rad2deg((math.atan((Yl-Yp)/(Xl-Xp))))+360
+    AZIM=rad2deg((math.atan((Yl-Yp)/(Xp-Xl))))+360
 elif Xp < Xl and Yp < Yl:
     print("3")
     AZIM=(rad2deg(math.atan((Yl-Yp)/(Xl-Xp))))-180
 elif Xp < Xl and Yp > Yl:
     print("4")
-    AZIM=(rad2deg(math.atan((Yl-Yp)/(Xl-Xp))))+180
+    AZIM=(rad2deg(math.atan((Yp-Yl)/(Xl-Xp))))+180
 elif Xp == Xl and Yp > Yl:
     print("5")
     AZIM=90
