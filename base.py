@@ -51,7 +51,6 @@ else:
     QUAD="Undetermined"
     AZIM="Undetermined"
 
-print("The quadrant in which the projection point falls is the",QUAD)
 print("The measure of the vertical angle of the beacon relative to the antenna:",ELEV,"\u00b0")
 print("The azimuth of the beacon relative to the antenna:",AZIM,"\u00b0")
 print("The range of the beacon relative to the antenna:",Rr,"meters")
