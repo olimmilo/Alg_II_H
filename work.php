@@ -1,9 +1,6 @@
 <html>
   <body>
-    <p>
-      $_POST["E"]
-      $_POST["A"]
-      $_POST["Z"]
+    <p> 
       <?php
         function rad2deg($radians){
           $pi = M_PI;
@@ -15,9 +12,9 @@
           $radians = $pi * $degrees / 180;
           return $radians;
         }
-        $E=floatval($E);
-        $A=floatval($A);
-        $H=floatval($H);
+        $E=floatval($_POST["E"]);
+        $A=floatval($_POST["A"]);
+        $H=floatval($_POST["Z"]);
         $Xl=40.6;
         $Yl=-106;
         $Zl=0;
