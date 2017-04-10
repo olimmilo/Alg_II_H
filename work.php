@@ -13,7 +13,7 @@
         $Xp=(($H/(tan(deg2rad(90-$E))))*(sin(deg2rad(90-$A))));
         $Yp=(($H/(tan(deg2rad(90-$E))))*(sin(deg2rad($A))));
         $ELEV=90-rad2deg(asin(($H-61)/$Rr));
-        $Rr=pow(((pow($Xl-$Xp),2)+(pow($yl-$Yp),2)+(pow($Zl-$Zp),2)),0.5)
+        $Rr=pow(((pow($Xl-$Xp),2)+(pow($yl-$Yp),2)+(pow($Zl-$Zp),2)),0.5);
         if ($Xp > $Xl and $Yp > $Yl) {
             $AZIM=rad2deg(atan((Yl-Yp)/(Xl-Xp)));
         } elseif ($Xp < $Xl and $Yp < $Yl) {
