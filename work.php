@@ -2,7 +2,6 @@
   <body>
     <p> 
       <?php
-
         $E=floatval($_POST["E"]);
         $A=floatval($_POST["A"]);
         $H=floatval($_POST["Z"]);
@@ -29,8 +28,8 @@
         } */
       ?>
       
-      The measure of the vertical angle of the beacon relative to the antenna: <?php echo $Yl; ?> \u00b0 <br>
-      The azimuth of the beacon relative to the antenna: <?php echo $Zl; ?> \u00b0 <br>
+      The measure of the vertical angle of the beacon relative to the antenna: <?php echo $Yl; ?> &deg; <br>
+      The azimuth of the beacon relative to the antenna: <?php echo $Zl; ?> &deg; <br>
       The range of the beacon relative to the antenna: <?php echo $B; ?> meters
     </p>
   </body>
