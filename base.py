@@ -21,31 +21,22 @@ ELEV=90-rad2deg(math.asin((H-61)/Rr))
 Xp=((H/(math.tan(deg2rad(90-E))))*(math.sin(deg2rad(90-A))))
 Yp=((H/(math.tan(deg2rad(90-E))))*(math.sin(deg2rad(A))))
 if Xp > 0 and Yp > 0:
-    QUAD="First"
     AZIM=rad2deg(math.atan((Yl-Yp)/(Xl-Xp)))
 elif Xp > 0 and Yp < 0:
-    QUAD="Fourth"
     AZIM=rad2deg((math.atan((Yl-Yp)/(Xl-Xp))))+360
 elif Xp < 0 and Yp < 0:
-    QUAD="Third"
     AZIM=(rad2deg(math.atan((Yl-Yp)/(Xl-Xp))))-180
 elif Xp < 0 and Yp > 0:
-    QUAD="Second"
     AZIM=(rad2deg(math.atan((Yl-Yp)/(Xl-Xp))))+180
 elif Xp == 0 and Yp > 0:
-    QUAD="Special"
     AZIM=90
 elif Xp == 0 and Yp < 0:
-    QUAD="Special"
     AZIM=90
 elif Xp == 0 and Yp == 0:
-    QUAD="Special"
     AZIM=Undefined
 elif Xp > 0 and Yp == 0:
-    QUAD="Special"
     AZIM=0
 elif Xp < 0 and Yp == 0:
-    QUAD="Special"
     AZIM=0
 else:
     QUAD="Undetermined"
