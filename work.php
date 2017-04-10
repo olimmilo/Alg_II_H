@@ -1,6 +1,9 @@
 <html>
   <body>
     <p>
+      $_POST["E"]
+      $_POST["A"]
+      $_POST["Z"]
       <?php
         function rad2deg($radians){
           $pi = M_PI;
