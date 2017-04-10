@@ -41,7 +41,7 @@ elif Xp == Xl and Yp < Yl:
 elif Xp == Xl and Yp == Yl:
     print("7")
     AZIM=Undefined
-elif Xp > 0 and Yp == Yl:
+elif Xp > Xp and Yp == Yl:
     print("8")
     AZIM=0
 elif Xp < Xl and Yp == Yl:
