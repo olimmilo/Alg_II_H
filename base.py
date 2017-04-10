@@ -20,23 +20,23 @@ Rr=(((Xl-((H/(math.tan(deg2rad(90-E))))*(math.sin(deg2rad(90-A)))))**2)+((Yl-((H
 ELEV=90-rad2deg(math.asin((H-61)/Rr))
 Xp=((H/(math.tan(deg2rad(90-E))))*(math.sin(deg2rad(90-A))))
 Yp=((H/(math.tan(deg2rad(90-E))))*(math.sin(deg2rad(A))))
-if Xp > 0 and Yp > 0:
+if Xp > Xl and Yp > Yl:
     AZIM=rad2deg(math.atan((Yl-Yp)/(Xl-Xp)))
-elif Xp > 0 and Yp < 0:
+elif Xp > Xl and Yp < Yl:
     AZIM=rad2deg((math.atan((Yl-Yp)/(Xl-Xp))))+360
-elif Xp < 0 and Yp < 0:
+elif Xp < Xl and Yp < Yl:
     AZIM=(rad2deg(math.atan((Yl-Yp)/(Xl-Xp))))-180
-elif Xp < 0 and Yp > 0:
+elif Xp < Xl and Yp > Yl:
     AZIM=(rad2deg(math.atan((Yl-Yp)/(Xl-Xp))))+180
-elif Xp == 0 and Yp > 0:
+elif Xp == Xl and Yp > Yl:
     AZIM=90
-elif Xp == 0 and Yp < 0:
+elif Xp == Xl and Yp < Yl:
     AZIM=90
-elif Xp == 0 and Yp == 0:
+elif Xp == Xl and Yp == Yl:
     AZIM=Undefined
-elif Xp > 0 and Yp == 0:
+elif Xp > 0 and Yp == Yl:
     AZIM=0
-elif Xp < 0 and Yp == 0:
+elif Xp < Xl and Yp == Yl:
     AZIM=0
 else:
     QUAD="Undetermined"
