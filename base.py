@@ -40,12 +40,12 @@ elif Xp == Xl and Yp < Yl:
     AZIM=90
 elif Xp == Xl and Yp == Yl:
     print("7")
-    AZIM=Undefined
+    AZIM="Undefined"
 elif Xp > Xp and Yp == Yl:
     print("8")
-    AZIM=0
+    AZIM="Undefined"
 elif Xp < Xl and Yp == Yl:
-    AZIM=0
+    AZIM="Undefined"
 else:
     print("1")
     QUAD="Undetermined"
