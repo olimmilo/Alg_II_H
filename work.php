@@ -25,7 +25,7 @@
             $AZIM=(rad2deg((atan(($Yl-$Yp)/($Xl-$Xp)))))+180;
         } elseif ($Xp < $Xl and $Yp > $Yl) {
             $hi=3;
-            $AZIM=(rad2deg((atan(($Yl-$Yp)/($Xl-$Xp)))));
+            $AZIM=(rad2deg((atan(($Yl-$Yp)/($Xl-$Xp)))))+270;
         } elseif ($Xp > $Xl and $Yp < $Yl) {
             $hi=4;
             $AZIM=(rad2deg((atan(($Yl-$Yp)/($Xl-$Xp)))));
