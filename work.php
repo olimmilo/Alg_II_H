@@ -4,9 +4,9 @@
       <?php
         $E=floatval($_POST["E"]);
         $A=floatval($_POST["A"]);
-        $H=floatval($_POST["H"]);/*
+        $H=floatval($_POST["H"]);
         $Xl=floatval($_POST["X"]);
-        $Yl=floatval($_POST["Y"]);*/
+        $Yl=floatval($_POST["Y"]);
         $Zl=0;
         $B=61;
         $Zp=$H-$B;
