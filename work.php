@@ -5,8 +5,8 @@
         $E=floatval($_POST["E"]);
         $A=floatval($_POST["A"]);
         $H=floatval($_POST["H"]);
-        $Xl=40.6;
-        $Yl=-106;
+        $Xl=floatval($_POST["XL"];
+        $Yl=floatval($_POST["YL"]);
         $Zl=0;
         $B=61;
         $Zp=$H-$B;
