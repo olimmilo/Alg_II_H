@@ -7,6 +7,7 @@
         $H=floatval($_POST["H"]);
         $Xl=floatval($_POST["XL"];
         $Yl=floatval($_POST["YL"]);
+        /*
         $Zl=0;
         $B=61;
         $Zp=$H-$B;
@@ -35,13 +36,12 @@
          } elseif ($Xp == $Xl) {
             $hi=6;
             $AZIM="0";
-        }
+        }*/
       ?>
       
-      The measure of the vertical angle of the beacon relative to the antenna: <?php echo $ELEV; ?> &deg; <br>
-      The azimuth of the beacon relative to the antenna: <?php echo $AZIM; ?> &deg; <br>
-      The range of the beacon relative to the antenna: <?php echo $Rr; ?> meters <br>
-      The quadrant of the beacon relative to the antenna: <?php echo $hi; ?> <br>
+      The measure of the vertical angle of the beacon relative to the antenna: <?php echo $Xl; ?> &deg; <br>
+      The azimuth of the beacon relative to the antenna: <?php echo $Yl; ?> &deg; <br>
+      The range of the beacon relative to the antenna: <?php echo ; $Yl?> meters <br>
       <a href="/">Try another</a>
     </p>
     
